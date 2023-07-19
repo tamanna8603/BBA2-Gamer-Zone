@@ -116,6 +116,38 @@
   text-align: center;
   justify-items: center;
 }
+/*online games styles*/
+.online-game-container h2{
+  text-align: center;
+  color: #0B0223;
+  font-size: 2.6rem;
+}
+.online-game-container p{
+  color: #534C64;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 auto;
+}
+.grid-container{
+  display: grid;
+  width: 80%;
+  height: auto;
+  margin: 50px auto;
+  gap:10px;
+  grid-template-columns: repeat(4,1fr);
+}
+.card{
+  padding: 0;
+  border-radius: 16px;
+  
+}
+.card img{
+  width: 100%;
+  display: block;
+  margin:0 auto;
+}
+
 
 
 
@@ -135,6 +167,9 @@
     margin-bottom: 20px;
     padding:0 auto;
   }
+  .icons{
+    padding-right: 0px;
+  }
   .banner-container{
     flex-direction: column-reverse;
     height: auto;
@@ -146,17 +181,33 @@
   .banner-text{
     text-align: center;
   }
+  .online-game-container h2{
+    font-size: 2rem;
+  }
+  h2 .text-title2{
+    font-size: 2rem;
+  }
+  .grid-container{
+    grid-template-columns: 1fr;
+    
+  }
 }
+  
 
 
 /*tablet or medium devices */
 @media screen and (min-width:576px) and (max-width:960px){
   .nav-menus-container a{
-    gap: 15px;
+    width: 100%;
+    margin-right: 2px;
+    font-size: 15px;
   }
   .icons{
-    border-radius: 5px;
+    border-radius:2px;
     background: rgba(11, 2, 35, 0.10);
-    padding: 5px;
+    padding: 0px;
+  }
+  .grid-container{
+    grid-template-columns: repeat(2,1fr); 
   }
 }
