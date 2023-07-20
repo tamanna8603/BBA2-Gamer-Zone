@@ -158,7 +158,7 @@
   left:50;
   position: absolute;
   background: rgba(0,0,0,0.3);
-  border: 5px solid salmon;
+  border: 5px solid seagreen;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,7 +241,6 @@
   gap: 15px;
   width:200px;
   height: auto;
-  border: 2px solid #df2c88;
   border-radius: 45px;
   padding-left: 0px;
   background-image: #fff;
@@ -262,10 +261,11 @@ footer{
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding-left: 100px;
+  padding-left: 45px;
   justify-content: center;
   gap: 15px;
 }
+
 .footer-container p{
   color: #fff;
   font-size: 2.8rem;
@@ -378,15 +378,39 @@ footer{
     padding-left: 5px;
   }
   .games-category-container{
+    display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin-left: 5px;
+    margin-top: 65px;
   }
   .footer-items{
     display: flex;
-    justify-content: center;
-    margin-left: 10px;
-    margin:0 auto;
-    gap:5px;
+    font-size: 1rem;
+    margin-left: 0px;
+    gap: 5px;
     align-items: center;
+    
+  }
+  
+  .terms-container{
+    width: 50%;
+    margin:0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr); 
+    
+  }
+  .terms-container a{
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .copyright{
+    width: 65%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-left: 11px;
   }
   
  
